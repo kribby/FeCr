@@ -28,6 +28,7 @@ FecrApp::~FecrApp()
 {
 }
 
+extern "C" void FecrApp__registerApps() { FecrApp::registerApps(); }
 void
 FecrApp::registerApps()
 {
