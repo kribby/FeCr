@@ -10,10 +10,9 @@ InputParameters validParams<FecrApp>()
   return params;
 }
 
-FecrApp::FecrApp(const std::string & name, InputParameters parameters) :
-    MooseApp(name, parameters)
+FecrApp::FecrApp(InputParameters parameters) :
+    MooseApp(parameters)
 {
-  srand(processor_id());
 
   Moose::registerObjects(_factory);
   ModulesApp::registerObjects(_factory);
