@@ -11,7 +11,7 @@ InputParameters validParams<FecrApp>();
 class FecrApp : public MooseApp
 {
 public:
-  FecrApp(const std::string & name, InputParameters parameters);
+  FecrApp(InputParameters parameters);
   virtual ~FecrApp();
 
   static void registerApps();
